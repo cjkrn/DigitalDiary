@@ -1,0 +1,22 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>view-dairy</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+  <ion-card>
+    <ion-card-title>
+        Diary Title:- {{ dairy.title}}
+    </ion-card-title>
+    <div class="dairy.date">Date:- {{ dairy.date}}</div>
+     <hr />
+    <div> Description:- {{dairy.content }}</div>
+  </ion-card>
+</ion-content>
+<ion-footer>
+  <button ion-button color="danger" block (click)="deleteDairy(dairy.createDate)">
+    Delete Note
+  </button>
+</ion-footer>

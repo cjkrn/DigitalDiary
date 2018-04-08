@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      My Diary
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+      <button ion-item *ngFor="let dairy of dairys | async" (click)="getDairy(dairy.createDate)" >
+          <span class="date"> {{ dairy.date}}   </span>
+        {{ dairy.title }}
+      </button>
+  </ion-list>
+  <div text-center>
+    <button ion-button (click)="addDiary()" center>Add Diary</button>
+  </div>
+</ion-content>

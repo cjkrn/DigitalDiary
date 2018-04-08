@@ -1,0 +1,8 @@
+{
+  "name": "DigiDairy",
+  "app_id": "adee91c4",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
